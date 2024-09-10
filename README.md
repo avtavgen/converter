@@ -5,6 +5,7 @@ FastAPI Currency converter example project.
 ## Preconditions:
 
 - Python 3.12
+- API_KEY environment variable
 
 ## Clone the project
 

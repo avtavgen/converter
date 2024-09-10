@@ -3,3 +3,4 @@ currencyconverter
 pytest
 python-dotenv
 starlette
+pydantic
