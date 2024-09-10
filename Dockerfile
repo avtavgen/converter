@@ -11,6 +11,8 @@ RUN pip install --upgrade pip
 
 RUN pip install --no-cache-dir --upgrade -r requirements.txt
 
+EXPOSE 80
+
 COPY . /app
 
 CMD []

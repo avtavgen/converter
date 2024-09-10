@@ -4,11 +4,9 @@ services:
   web:
     build: .
     command: fastapi run main.py --port 80
+    environment:
+      API_KEY: ${API_KEY}
     volumes:
       - .:/app
     ports:
-      - 80:80
-    depends_on:
-      - postgres
-      - redis
-      - worker
+      - "80:80"
