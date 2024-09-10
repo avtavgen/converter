@@ -1,8 +1,6 @@
-from dotenv import load_dotenv
-from fastapi import FastAPI
+from fastapi import FastAPI, Depends
 from routers.converter import router
-
-load_dotenv('.env')
+from service.security_service import key_auth
 
 app = FastAPI()
 
@@ -10,6 +8,6 @@ app = FastAPI()
 app.include_router(router)
 
 
-@app.get("/")
+@app.get("/", dependencies=[Depends(key_auth)])
 def read_root():
     return {"message": "Server is running."}
