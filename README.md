@@ -1,6 +1,10 @@
-# fastapi-example
+# Currency converter
 
-FastAPI Currency converter example project.
+API Currency converter application based on pypi package.
+
+```
+https://pypi.org/project/CurrencyConverter/
+```
 
 ## Preconditions:
 
